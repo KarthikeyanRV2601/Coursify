@@ -1,0 +1,1214 @@
+@import '../public/components.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family:PoppinsLight;
+    src:url('../fonts/Poppins-Light.ttf');
+}
+@font-face {
+    font-family:PoppinsRegular;
+    src:url('../fonts/Poppins-Regular.ttf');
+}
+
+body{
+    font-family:PoppinsRegular;
+    color: $font-color;
+    overflow-x: hidden;
+}
+button{
+    background: #d60b3c;
+    background: linear-gradient(-200deg,#ff2ced,#503ef5);
+    border: none;
+    color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: -1px 4px 5px rgba(0,0,0,0.2),
+                         0px 0px 5px rgba(0,0,0,0.1);
+
+    &:hover{
+    @include HoverButton;
+    }
+                            
+
+}
+video{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    cursor: pointer;
+    object-fit: cover;
+    // &:hover{
+    //     animation: 0.5s animate linear infinite alternate;
+    //      @keyframes animate {
+    //          0%{
+    //              transform: scale(1);
+    //          }
+    //         100%{
+    //             transform: scale(1.05);
+    //         }
+             
+    //      }
+    // } 
+}
+
+
+.ImageHolder{
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        // width:250px;
+        // height:250px;
+       transform: scale(1.25);
+    }
+}
+.VideoHolder{
+    border-radius: 10px;
+    box-shadow: -2px 6px 6px rgba(0,0,0,0.2),
+                         0px 0px 5px rgba(0,0,0,0.2);           
+}
+svg{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+header{
+nav{
+    position: absolute;
+    top:0;
+    left:0;
+    min-height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    z-index: 10;
+    background: white;
+    .Logo{
+        width: 150px;    
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .Links{
+        width: 100vh;
+        display: flex;
+        justify-content: space-between;
+        .Link{
+        text-decoration: none;
+        color: $font-color;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+            color:#888888;
+        }
+
+        }
+    }
+    .Menu{
+        display: none;   
+    }
+    
+    .Dropdown{
+        position: absolute;
+        right:-50vh;
+        top:10vh;
+        width:250px;
+        height:300px;
+        background: $logo-red;
+        opacity: 0;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        transition: 0.5s;
+        .Link{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                color:#c7c7c7;
+            }
+        }
+        
+    }
+    
+}
+}
+
+.Page{
+    height: 100vh;
+    width: 100%;
+    // background: black;
+    display: flex;
+    flex-direction: column;
+    
+
+    h1{
+
+        font-size: 50px;
+        font-weight: bolder;
+        span{
+            color:$logo-blue;
+        }
+    }
+    
+}
+
+.Landing{
+    
+    .BannerLanding{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        padding-top: 2%;
+
+        .Intro{
+            padding-top: 10%;
+            padding-left: 5%;
+            width: 50%;
+            .Title{
+                // font-weight:700;
+                span{
+                    color:$logo-blue;
+                }
+            }
+            button{
+                margin-top: 5%;
+                // background: blue;
+            }
+
+           
+        }
+        .VideoHolder{
+            margin-top: 5%;
+            width: 625px;
+            height: 350px;
+            background: $logo-blue;
+        }
+    }
+    .Perks{
+        
+        margin-top: 5%;
+        margin-left: 5%;
+        width:90%;
+        height:20%;
+        display: flex;
+        justify-content: space-around;
+        .Perk{
+            text-align: center;
+            width:300px;
+            display: flex;
+            
+            .ImageHolder{
+                width:150px;
+                height: 150px;
+                border-radius: 20px;
+                background: $logo-blue;
+                cursor:auto;   
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-bottom-left-radius:10px;
+                    border-top-left-radius:10px;
+                    object-fit: cover;
+                    background:#9bb9ff;
+                    box-shadow: 0px 4px 6px rgba(0,0,0,0.2),
+                                0px -2px 8px rgba(0,0,0,0.2);
+                            
+                }
+                &:hover{
+                    transform: none;//just to cancel out the inherited animation
+                }
+            }
+            h2{ 
+                padding-top: 10%;
+                padding-left: 10px;
+                span{
+                    font-size: 25px;
+                }
+                width:50%;
+                font-size: 15px;
+                height: 150px;
+                border-bottom-right-radius:10px;
+                border-top-right-radius:10px;
+                box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+                         
+
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+.Doubts{
+    
+    .BannerDoubts{
+        width: 100%;
+        height: 60%;
+        background:rgb(255, 255, 255);
+        display: flex;
+        
+        .Details{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 60%;
+            height: 60%;
+            background: rgb(255, 255, 255);
+            
+            .Content{
+                margin-left:5%;
+                width: 90%;
+                height: 20%;
+                display: flex;
+                // background: cornsilk;
+                margin-top:5%;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                }
+                .text{
+                    padding-left: 1%;
+                    h2{
+                        font-size: 20px;
+                    }
+                    
+                }
+                
+            }
+
+        }
+        .Illustro{
+
+            width: 700px;
+            height: 400px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+        }
+    }
+    .WorkFlow{
+        width: 100%;
+        height:40%;
+        margin-top: -2%;
+        h3{text-align: center;
+            font-size: 30px;
+            line-height: 100%;
+        }
+        h4{
+            text-align: center;
+            font-weight: 100;
+            span{
+                font-size: smaller;
+            }
+        }
+        .Circles{
+            margin-top: 2%;
+            width: 100%;
+            height:40%;
+            display: flex;
+            // background: coral;
+            justify-content: space-around;
+            .Circle{
+                width:20%;
+                height: 100%;
+                text-align: center  ;
+                img{
+                    width:150px;
+                    height: 150px;
+                    border-radius:50%;
+                    object-fit: cover;
+                    border:none;
+                }
+
+            }
+            img{
+                width:30px;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    button{
+        margin-top: 1%;
+        margin-left: 50%;
+        width: 250px;
+        transform: translateX(-50%);
+    }
+    
+}
+
+
+
+
+.Live{
+
+    h1{
+        margin-top:10%;
+        
+        text-align: center;
+        span{
+            color:$logo-blue;
+        }
+    }
+    .BannerLive{
+        margin-top: 5%;
+        width: 100%;
+        height:50%;
+        // background: chocolate;
+        display: flex;
+        justify-content: space-around;
+        .Details{
+
+            margin-left:-5%;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background: #d60b3c;
+            .Detail{
+            // margin-left:10%;
+            
+            width:100%;
+            height:30%;
+            display: flex; 
+            p{
+                width: 100%;
+                height:100%;
+            }
+            img{
+                width:50px;
+                height: 50px;
+                object-fit: cover;
+            }
+            
+
+        }
+        }
+        .VideoHolder{
+            width: 40%;
+            height: 90%;
+            background: #1e4190;   
+            object-fit: cover; 
+        }
+    }
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    button{
+        margin-top: 1%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+
+
+
+.Jee,.Neet{
+
+    h1{margin-top: 10%;
+        text-align: center;
+    }
+    .BannerJee,.BannerNeet{
+        margin-top: 5%;
+        width:100%;
+        height:50%;
+        display: flex;
+        justify-content: center;
+        .VideoHolder{
+            // margin-left: 5%;
+            width:40%;
+            height:90%;
+            background: $logo-blue;
+        }
+        .Details{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                // margin-left: 10%;
+                font-size: 30px;
+            }
+            p{  
+                width:70%;
+                text-align: center;
+            }
+        }
+        
+        
+        
+
+    }
+    button{
+        margin-top: 5%;
+        margin-left: 50%;
+        width: 250px;
+        
+        transform: translateX(-50%);
+        border: none;
+    }
+    .Slider{
+
+        width:80px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        // margin-top: 25%;
+        display: flex;
+        justify-content: space-around;
+        // bottom: 0;
+        
+    }
+}
+
+
+
+
+.Subjects{
+    h1{margin-top: 10%;
+        text-align: center;
+        color: $logo-blue;
+        line-height: 100%;
+        span{
+            color:$font-color;
+            font-size: 40px;
+        }
+    }
+    .BannerSubjects{
+        width: 100%;
+        height: 70%;
+        // background: $font-color;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+
+        .ImageHolder{
+            width:200px;
+            height: 200px;
+            // background: coral;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: -2px 5px 6px rgba(0,0,0,0.1),
+                         2px -3px 5px rgba(0,0,0,0.1);
+            img{
+                width:130px;
+                height:130px;
+                object-fit: cover;
+            }
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+    a{  
+        position: relative;
+        bottom: 15%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color:$logo-blue;
+        transition: 0.5s;
+        &:hover{
+            margin-left: 2%;
+            color:$logo-red;
+        }
+    }
+}
+
+
+
+
+.Books{
+    h1{
+        // margin-top: -15%;
+        text-align: center;
+    }
+    p{  
+        margin-top: 1%;
+        text-align: center;
+    }
+    a{  
+        margin-top: 5%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;    
+        color:$logo-blue;
+        transition: 0.5s;
+        &:hover{
+            margin-left: 2%;
+            color:$logo-red;
+        }
+    }
+    .BannerBooks{
+        @include RowBanners;
+    }
+}
+
+
+
+
+.Boards{
+    h1{
+        margin-top: 5%;
+        text-align: center;
+        color: $logo-blue;
+    }
+    p{  
+        margin-top: 1%;
+        text-align: center;
+    }
+    a{  
+        margin-top: 5%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color:$logo-blue;
+        transition: 0.5s;
+        &:hover{
+            margin-left: 2%;
+            color:$logo-red;
+        }
+    }
+    .BannerBoards{
+        @include RowBanners;
+    }
+}
+
+.Tutors{
+    h1{margin-top: 10%;
+        text-align: center;
+    }
+    .BannerTutors{
+        margin-top: 5%;
+        width:100%;
+        height: 60%;
+    .Row1{
+        @include RowTutors;
+    } 
+    .Row2{
+        @include RowTutors;
+    }    
+    
+    }
+}
+
+
+
+.Students{
+    h1{margin-top: 5%;
+        text-align: center;
+    }
+    .BannerStudents{
+        width:100%;
+        height:50%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        .VideoHolder{
+            width:600px;
+            height:350px;
+            background: $logo-blue;
+        }
+        .Entry{
+            margin-top: 0%;
+            width: 600px;
+            height: 350px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width:120px;
+                height: 120px;
+                border-radius: 50%;
+                background: $logo-blue;
+                object-fit: cover;
+            }
+            .textHolder{
+                width:400px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                
+               
+            }
+    
+        }
+        
+    }
+    button{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border: none;
+    }
+    .Slider{
+        position: absolute;
+        margin-top: 40%;
+        transform: translateY(-50%);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width:80px;
+        display: flex;
+        justify-content: space-around;
+        // bottom: 0;
+        
+    }
+}
+
+footer{
+    width:100%;
+    height: 20vh;
+    background: $font-color;
+    color:#e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1%;
+    font-size: 1em;
+    span{
+        font-size: 0.9em;
+    }
+}
+
+//Responsive desgin code
+
+@media (max-width:1080px)
+{
+    .Page{
+        h1 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
+
+header {
+    nav {
+        .Links {
+    width: 60%;
+    .Link {
+        font-size: 15px;
+    }
+    .Menu{
+    display: none;
+    }
+
+}
+}
+}
+
+svg{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.Landing{
+    .Perks {
+        .Perk{ 
+        padding-left: 10px;
+        .ImageHolder{
+            width:100px;
+            height: 100px;
+            
+        }
+        
+        h2 {
+            
+            width:55%;
+            height: 100px;
+            font-size: 14px;
+            span {
+                font-size: 16px;
+            }
+        }
+
+
+}
+}
+
+}
+
+.Live,.Students,.Jee,.Neet,.Landing{
+    
+    .BannerLive,.BannerNeet,.BannerStudents
+    ,.BannerJee,.BannerLanding{
+        .VideoHolder{
+            width: 40%;
+            height: 70%;
+            width: 450px;
+            height: 250px;
+        }
+        .Details{
+            height: 70%;
+            
+        h2{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 25px;
+        }
+    }
+    }
+}
+
+.Jee,.Neet{
+    h1 {
+        margin-top: 5%;
+    }
+}
+
+
+.Books,.Boards{
+    h1 {
+        margin-top: 0%;
+    }
+    .BannerBooks,.BannerBoards{
+    .Row1 ,.Row2{
+    .ImageHolder {
+        width: 140px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h4 {
+            
+            font-size: 14px;
+        }
+        img {
+            padding-top: 5%;
+            width: 100px;
+            height: 100px;
+        }
+    
+    
+    }
+}
+}
+}
+.Subjects {
+    h1 {
+        margin-top: 0%;
+    }
+    .BannerSubjects {
+        .ImageHolder {
+            width: 150px;
+            height: 150px;
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h4 {
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    }
+    }
+}
+.Tutors {
+    h1 {
+        margin-top: 5%;
+    }
+    .BannerTutors {
+        margin-top: 10%;
+        .Row1,.Row2 {
+            width: 95%;
+            height: 40%;
+            .Entry {
+                img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #1e4190;
+    -o-object-fit: cover;
+    object-fit: cover;
+    
+}
+.textHolder {
+    width: 125px;
+
+    h4 {
+        margin-top: 2%;
+        margin-left: 7%;
+        font-size: 16px;
+    }
+    p {
+        margin-left: 7%;
+        font-size: 12px;
+    }
+}
+}            
+}
+}
+}
+
+.Students{
+    h1 {
+        margin-top: -10%;
+    }
+    .BannerStudents{
+        margin-top: 10%;
+        justify-content: space-around;
+        .Entry {
+            margin-top: 0%;
+            width: 250px;
+            height: 250px;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #1e4190;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+            .textHolder {
+            width: 125px;
+            justify-content: center;
+
+
+            h4 {
+                
+                font-size: 16px;
+            }
+            p {
+                
+                font-size: 12px;
+            }
+}
+}        
+}
+.Slider {
+    position: absolute;
+    margin-top: 40%;
+    transform: translateY(-50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width:80px;
+    display: flex;
+    justify-content: space-around;
+    // bottom: 0;
+}
+}
+
+
+}
+
+@media (max-width:768px){
+
+    .Page h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    header{ 
+        nav 
+        {
+            .Logo {
+                width: 150px;
+            }
+
+            .Menu{
+                display: inline;
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+                cursor: pointer;
+            }
+            .Links{
+                display: none;
+            }
+        
+}
+}
+    .Landing {
+
+
+        .Perks {
+            .Perk {
+            text-align: center;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ImageHolder {
+                width: 85px;
+                height: 85px;
+                img {
+                width: 85px;
+                height: 85px;
+                border-bottom-left-radius:0px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                }
+            
+            }
+            h2 {
+                width: 85px;
+                // height: 100px;
+                font-size: 12px;
+                padding-top: 0;
+                padding-left: 0;
+                height: 150px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                span {
+                    font-size: 14px;
+                }
+        }
+        }
+    }
+        .BannerLanding {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+        .Intro {
+            padding-top: 10%;
+            padding-left: 5%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+    }
+    .Doubts {
+        .BannerDoubts {
+        width: 100%;
+        height: 50%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       .Illustro{
+           position: absolute;
+           z-index: -1;
+        }     
+        .Details {
+            
+            // background-
+            width: 100%;
+            height: 90%;
+            .Content {
+                .text {
+                    h2 {
+                        font-size: 18px;
+        }
+        p{
+            font-size: 16px;
+        }
+        &::after{
+                content:"";
+                width:100%;
+                height:100%;
+                position: absolute;
+                top:0;
+                left:-5vh;
+                background: url(../media/illustrations/student-hearing-tutor-through-the-computer-vector.jpg);
+                background-size: cover;
+                opacity: 0.1;
+                z-index: -1;
+
+        }
+    }
+    }
+    }
+    }
+    .WorkFlow {
+        z-index: 1;
+    .Circles .Circle img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border: none;
+    }
+    }
+    }
+    .Live{
+        .BannerLive{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 60%;
+            .Details{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                .Detail{
+                    h3{width: fit-content;
+                        font-size: 18px;
+                    }
+                    p{
+                    width: fit-content;
+                    font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .Jee,.Neet{
+    
+        .BannerJee,.BannerNeet{
+
+        margin-top: 5%;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .Details {
+            width: 100%;
+            p {
+                width: 100%;
+            }
+        }
+    }
+    }
+    .Books,.Boards{
+        h1 {
+            margin-top: -10%;
+        }
+        .BannerBooks,.BannerBoards{
+        .Row1 ,.Row2{
+            height: 40%;
+        .ImageHolder {
+            width: 15%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h4 {
+                text-align: center;
+                font-size: 11px;
+                font-weight: lighter;
+            }
+            img {
+                padding-top: 5%;
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+            }
+            }
+        
+        
+        }
+    }
+    }
+    
+    .Subjects {
+        h1 {
+            margin-top: 0%;
+        }
+        .BannerSubjects {
+            .ImageHolder {
+                width: 150px;
+                height: 150px;
+            
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h4 {
+                padding-top: 10px;
+                font-size: 14px;
+            }
+        }
+        }
+    }
+    .Tutors {
+        h1 {
+            margin-top: -5%;
+        }
+        .BannerTutors{
+        margin-top: 10%;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+             .Row1,.Row2 {
+                 display: flex;
+                 flex-direction: column;
+                 height: 100%;
+                //  margin-left: 10%;
+                 .Entry {
+                    
+                    width: 50%;
+                    height: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: space-around;
+    }
+}
+}
+}
+.Students {
+    .BannerStudents {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Slider {
+    position: absolute;
+    margin-top: 80vh;
+    transform: translateY(-50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width:80px;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    margin-top: 8%;
+}
+}
+}

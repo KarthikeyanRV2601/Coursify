@@ -1,0 +1,1608 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+body {
+  font-family: PoppinsRegular;
+  color: #474747;
+  overflow-x: hidden;
+}
+
+button {
+  background: #d60b3c;
+  background: linear-gradient(-200deg, #ff2ced, #503ef5);
+  border: none;
+  color: white;
+  width: 250px;
+  height: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  -webkit-animation: animate 0.8s linear infinite alternate;
+          animation: animate 0.8s linear infinite alternate;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ImageHolder {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ImageHolder:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.VideoHolder {
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+svg {
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 8vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  z-index: 10;
+  background: white;
+}
+
+header nav .Logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+header nav .Logo:hover {
+  opacity: 0.7;
+}
+
+header nav .Links {
+  width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .Links .Link {
+  text-decoration: none;
+  color: #474747;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header nav .Links .Link:hover {
+  color: #888888;
+}
+
+header nav .Menu {
+  display: none;
+}
+
+header nav .Dropdown {
+  position: absolute;
+  right: -50vh;
+  top: 10vh;
+  width: 250px;
+  height: 300px;
+  background: #d60b3c;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav .Dropdown .Link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+header nav .Dropdown .Link:hover {
+  color: #c7c7c7;
+}
+
+.Page {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Page h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.Page h1 span {
+  color: #1e4190;
+}
+
+.Landing .BannerLanding {
+  width: 100%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2%;
+}
+
+.Landing .BannerLanding .Intro {
+  padding-top: 10%;
+  padding-left: 5%;
+  width: 50%;
+}
+
+.Landing .BannerLanding .Intro .Title span {
+  color: #1e4190;
+}
+
+.Landing .BannerLanding .Intro button {
+  margin-top: 5%;
+}
+
+.Landing .BannerLanding .VideoHolder {
+  margin-top: 5%;
+  width: 625px;
+  height: 350px;
+  background: #1e4190;
+}
+
+.Landing .Perks {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 90%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Landing .Perks .Perk {
+  text-align: center;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Landing .Perks .Perk .ImageHolder {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: #1e4190;
+  cursor: auto;
+}
+
+.Landing .Perks .Perk .ImageHolder img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #9bb9ff;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px -2px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Landing .Perks .Perk .ImageHolder:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.Landing .Perks .Perk h2 {
+  padding-top: 10%;
+  padding-left: 10px;
+  width: 50%;
+  font-size: 15px;
+  height: 150px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Landing .Perks .Perk h2 span {
+  font-size: 25px;
+}
+
+.Doubts .BannerDoubts {
+  width: 100%;
+  height: 60%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Doubts .BannerDoubts .Details {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 60%;
+  height: 60%;
+  background: white;
+}
+
+.Doubts .BannerDoubts .Details .Content {
+  margin-left: 5%;
+  width: 90%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+}
+
+.Doubts .BannerDoubts .Details .Content img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Doubts .BannerDoubts .Details .Content .text {
+  padding-left: 1%;
+}
+
+.Doubts .BannerDoubts .Details .Content .text h2 {
+  font-size: 20px;
+}
+
+.Doubts .BannerDoubts .Illustro {
+  width: 700px;
+  height: 400px;
+}
+
+.Doubts .BannerDoubts .Illustro img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Doubts .WorkFlow {
+  width: 100%;
+  height: 40%;
+  margin-top: -2%;
+}
+
+.Doubts .WorkFlow h3 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.Doubts .WorkFlow h4 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.Doubts .WorkFlow h4 span {
+  font-size: smaller;
+}
+
+.Doubts .WorkFlow .Circles {
+  margin-top: 2%;
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Doubts .WorkFlow .Circles .Circle {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+.Doubts .WorkFlow .Circles .Circle img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: none;
+}
+
+.Doubts .WorkFlow .Circles img {
+  width: 30px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Doubts button {
+  margin-top: 1%;
+  margin-left: 50%;
+  width: 250px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.Live h1 {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.Live h1 span {
+  color: #1e4190;
+}
+
+.Live .BannerLive {
+  margin-top: 5%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Live .BannerLive .Details {
+  margin-left: -5%;
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Live .BannerLive .Details .Detail {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Live .BannerLive .Details .Detail p {
+  width: 100%;
+  height: 100%;
+}
+
+.Live .BannerLive .Details .Detail img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Live .BannerLive .VideoHolder {
+  width: 40%;
+  height: 90%;
+  background: #1e4190;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Live h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.Live button {
+  margin-top: 1%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.Jee h1, .Neet h1 {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.Jee .BannerJee, .Jee .BannerNeet, .Neet .BannerJee, .Neet .BannerNeet {
+  margin-top: 5%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Jee .BannerJee .VideoHolder, .Jee .BannerNeet .VideoHolder, .Neet .BannerJee .VideoHolder, .Neet .BannerNeet .VideoHolder {
+  width: 40%;
+  height: 90%;
+  background: #1e4190;
+}
+
+.Jee .BannerJee .Details, .Jee .BannerNeet .Details, .Neet .BannerJee .Details, .Neet .BannerNeet .Details {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Jee .BannerJee .Details h2, .Jee .BannerNeet .Details h2, .Neet .BannerJee .Details h2, .Neet .BannerNeet .Details h2 {
+  font-size: 30px;
+}
+
+.Jee .BannerJee .Details p, .Jee .BannerNeet .Details p, .Neet .BannerJee .Details p, .Neet .BannerNeet .Details p {
+  width: 70%;
+  text-align: center;
+}
+
+.Jee button, .Neet button {
+  margin-top: 5%;
+  margin-left: 50%;
+  width: 250px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: none;
+}
+
+.Jee .Slider, .Neet .Slider {
+  width: 80px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Subjects h1 {
+  margin-top: 10%;
+  text-align: center;
+  color: #1e4190;
+  line-height: 100%;
+}
+
+.Subjects h1 span {
+  color: #474747;
+  font-size: 40px;
+}
+
+.Subjects .BannerSubjects {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Subjects .BannerSubjects .ImageHolder {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Subjects .BannerSubjects .ImageHolder img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Subjects .BannerSubjects .ImageHolder h4 {
+  font-size: 20px;
+}
+
+.Subjects a {
+  position: relative;
+  bottom: 15%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1e4190;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Subjects a:hover {
+  margin-left: 2%;
+  color: #d60b3c;
+}
+
+.Books h1 {
+  text-align: center;
+}
+
+.Books p {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.Books a {
+  margin-top: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1e4190;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Books a:hover {
+  margin-left: 2%;
+  color: #d60b3c;
+}
+
+.Books .BannerBooks {
+  width: 100%;
+  height: 60%;
+  margin-top: 1%;
+}
+
+.Books .BannerBooks .Row1 {
+  margin-top: 2%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Books .BannerBooks .Row1 .ImageHolder {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Books .BannerBooks .Row1 .ImageHolder img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Books .BannerBooks .Row1 .ImageHolder h4 {
+  font-size: 20px;
+}
+
+.Books .BannerBooks .Row2 {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Books .BannerBooks .Row2 .ImageHolder {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Books .BannerBooks .Row2 .ImageHolder img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Books .BannerBooks .Row2 .ImageHolder h4 {
+  font-size: 20px;
+}
+
+.Boards h1 {
+  margin-top: 5%;
+  text-align: center;
+  color: #1e4190;
+}
+
+.Boards p {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.Boards a {
+  margin-top: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1e4190;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Boards a:hover {
+  margin-left: 2%;
+  color: #d60b3c;
+}
+
+.Boards .BannerBoards {
+  width: 100%;
+  height: 60%;
+  margin-top: 1%;
+}
+
+.Boards .BannerBoards .Row1 {
+  margin-top: 2%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Boards .BannerBoards .Row1 .ImageHolder {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Boards .BannerBoards .Row1 .ImageHolder img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Boards .BannerBoards .Row1 .ImageHolder h4 {
+  font-size: 20px;
+}
+
+.Boards .BannerBoards .Row2 {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Boards .BannerBoards .Row2 .ImageHolder {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 5px 6px rgba(0, 0, 0, 0.1), 2px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Boards .BannerBoards .Row2 .ImageHolder img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Boards .BannerBoards .Row2 .ImageHolder h4 {
+  font-size: 20px;
+}
+
+.Tutors h1 {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.Tutors .BannerTutors {
+  margin-top: 5%;
+  width: 100%;
+  height: 60%;
+}
+
+.Tutors .BannerTutors .Row1 {
+  margin-left: 4%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Tutors .BannerTutors .Row1 .Entry {
+  width: 600px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Tutors .BannerTutors .Row1 .Entry img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #1e4190;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Tutors .BannerTutors .Row1 .Entry .textHolder {
+  width: 400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Tutors .BannerTutors .Row1 .Entry .textHolder h4 {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.Tutors .BannerTutors .Row1 .Entry .textHolder p {
+  margin-left: 10%;
+}
+
+.Tutors .BannerTutors .Row2 {
+  margin-left: 4%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Tutors .BannerTutors .Row2 .Entry {
+  width: 600px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Tutors .BannerTutors .Row2 .Entry img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #1e4190;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Tutors .BannerTutors .Row2 .Entry .textHolder {
+  width: 400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Tutors .BannerTutors .Row2 .Entry .textHolder h4 {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.Tutors .BannerTutors .Row2 .Entry .textHolder p {
+  margin-left: 10%;
+}
+
+.Students h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.Students .BannerStudents {
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Students .BannerStudents .VideoHolder {
+  width: 600px;
+  height: 350px;
+  background: #1e4190;
+}
+
+.Students .BannerStudents .Entry {
+  margin-top: 0%;
+  width: 600px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Students .BannerStudents .Entry img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #1e4190;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Students .BannerStudents .Entry .textHolder {
+  width: 400px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Students button {
+  margin-top: 5%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: none;
+}
+
+.Students .Slider {
+  position: absolute;
+  margin-top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background: #474747;
+  color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1%;
+  font-size: 1em;
+}
+
+footer span {
+  font-size: 0.9em;
+}
+
+@media (max-width: 1080px) {
+  .Page h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  header nav .Links {
+    width: 60%;
+  }
+  header nav .Links .Link {
+    font-size: 15px;
+  }
+  header nav .Links .Menu {
+    display: none;
+  }
+  svg {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .Landing .Perks .Perk {
+    padding-left: 10px;
+  }
+  .Landing .Perks .Perk .ImageHolder {
+    width: 100px;
+    height: 100px;
+  }
+  .Landing .Perks .Perk h2 {
+    width: 55%;
+    height: 100px;
+    font-size: 14px;
+  }
+  .Landing .Perks .Perk h2 span {
+    font-size: 16px;
+  }
+  .Live .BannerLive .VideoHolder, .Live .BannerNeet .VideoHolder, .Live .BannerStudents
+.VideoHolder, .Live .BannerJee .VideoHolder, .Live .BannerLanding .VideoHolder, .Students .BannerLive .VideoHolder, .Students .BannerNeet .VideoHolder, .Students .BannerStudents
+.VideoHolder, .Students .BannerJee .VideoHolder, .Students .BannerLanding .VideoHolder, .Jee .BannerLive .VideoHolder, .Jee .BannerNeet .VideoHolder, .Jee .BannerStudents
+.VideoHolder, .Jee .BannerJee .VideoHolder, .Jee .BannerLanding .VideoHolder, .Neet .BannerLive .VideoHolder, .Neet .BannerNeet .VideoHolder, .Neet .BannerStudents
+.VideoHolder, .Neet .BannerJee .VideoHolder, .Neet .BannerLanding .VideoHolder, .Landing .BannerLive .VideoHolder, .Landing .BannerNeet .VideoHolder, .Landing .BannerStudents
+.VideoHolder, .Landing .BannerJee .VideoHolder, .Landing .BannerLanding .VideoHolder {
+    width: 40%;
+    height: 70%;
+    width: 450px;
+    height: 250px;
+  }
+  .Live .BannerLive .Details, .Live .BannerNeet .Details, .Live .BannerStudents
+.Details, .Live .BannerJee .Details, .Live .BannerLanding .Details, .Students .BannerLive .Details, .Students .BannerNeet .Details, .Students .BannerStudents
+.Details, .Students .BannerJee .Details, .Students .BannerLanding .Details, .Jee .BannerLive .Details, .Jee .BannerNeet .Details, .Jee .BannerStudents
+.Details, .Jee .BannerJee .Details, .Jee .BannerLanding .Details, .Neet .BannerLive .Details, .Neet .BannerNeet .Details, .Neet .BannerStudents
+.Details, .Neet .BannerJee .Details, .Neet .BannerLanding .Details, .Landing .BannerLive .Details, .Landing .BannerNeet .Details, .Landing .BannerStudents
+.Details, .Landing .BannerJee .Details, .Landing .BannerLanding .Details {
+    height: 70%;
+  }
+  .Live .BannerLive .Details h2, .Live .BannerNeet .Details h2, .Live .BannerStudents
+.Details h2, .Live .BannerJee .Details h2, .Live .BannerLanding .Details h2, .Students .BannerLive .Details h2, .Students .BannerNeet .Details h2, .Students .BannerStudents
+.Details h2, .Students .BannerJee .Details h2, .Students .BannerLanding .Details h2, .Jee .BannerLive .Details h2, .Jee .BannerNeet .Details h2, .Jee .BannerStudents
+.Details h2, .Jee .BannerJee .Details h2, .Jee .BannerLanding .Details h2, .Neet .BannerLive .Details h2, .Neet .BannerNeet .Details h2, .Neet .BannerStudents
+.Details h2, .Neet .BannerJee .Details h2, .Neet .BannerLanding .Details h2, .Landing .BannerLive .Details h2, .Landing .BannerNeet .Details h2, .Landing .BannerStudents
+.Details h2, .Landing .BannerJee .Details h2, .Landing .BannerLanding .Details h2 {
+    font-size: 25px;
+  }
+  .Live .BannerLive .Details h3, .Live .BannerNeet .Details h3, .Live .BannerStudents
+.Details h3, .Live .BannerJee .Details h3, .Live .BannerLanding .Details h3, .Students .BannerLive .Details h3, .Students .BannerNeet .Details h3, .Students .BannerStudents
+.Details h3, .Students .BannerJee .Details h3, .Students .BannerLanding .Details h3, .Jee .BannerLive .Details h3, .Jee .BannerNeet .Details h3, .Jee .BannerStudents
+.Details h3, .Jee .BannerJee .Details h3, .Jee .BannerLanding .Details h3, .Neet .BannerLive .Details h3, .Neet .BannerNeet .Details h3, .Neet .BannerStudents
+.Details h3, .Neet .BannerJee .Details h3, .Neet .BannerLanding .Details h3, .Landing .BannerLive .Details h3, .Landing .BannerNeet .Details h3, .Landing .BannerStudents
+.Details h3, .Landing .BannerJee .Details h3, .Landing .BannerLanding .Details h3 {
+    font-size: 25px;
+  }
+  .Jee h1, .Neet h1 {
+    margin-top: 5%;
+  }
+  .Books h1, .Boards h1 {
+    margin-top: 0%;
+  }
+  .Books .BannerBooks .Row1 .ImageHolder, .Books .BannerBooks .Row2 .ImageHolder, .Books .BannerBoards .Row1 .ImageHolder, .Books .BannerBoards .Row2 .ImageHolder, .Boards .BannerBooks .Row1 .ImageHolder, .Boards .BannerBooks .Row2 .ImageHolder, .Boards .BannerBoards .Row1 .ImageHolder, .Boards .BannerBoards .Row2 .ImageHolder {
+    width: 140px;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Books .BannerBooks .Row1 .ImageHolder h4, .Books .BannerBooks .Row2 .ImageHolder h4, .Books .BannerBoards .Row1 .ImageHolder h4, .Books .BannerBoards .Row2 .ImageHolder h4, .Boards .BannerBooks .Row1 .ImageHolder h4, .Boards .BannerBooks .Row2 .ImageHolder h4, .Boards .BannerBoards .Row1 .ImageHolder h4, .Boards .BannerBoards .Row2 .ImageHolder h4 {
+    font-size: 14px;
+  }
+  .Books .BannerBooks .Row1 .ImageHolder img, .Books .BannerBooks .Row2 .ImageHolder img, .Books .BannerBoards .Row1 .ImageHolder img, .Books .BannerBoards .Row2 .ImageHolder img, .Boards .BannerBooks .Row1 .ImageHolder img, .Boards .BannerBooks .Row2 .ImageHolder img, .Boards .BannerBoards .Row1 .ImageHolder img, .Boards .BannerBoards .Row2 .ImageHolder img {
+    padding-top: 5%;
+    width: 100px;
+    height: 100px;
+  }
+  .Subjects h1 {
+    margin-top: 0%;
+  }
+  .Subjects .BannerSubjects .ImageHolder {
+    width: 150px;
+    height: 150px;
+  }
+  .Subjects .BannerSubjects .ImageHolder img {
+    width: 100px;
+    height: 100px;
+  }
+  .Subjects .BannerSubjects .ImageHolder h4 {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .Tutors h1 {
+    margin-top: 5%;
+  }
+  .Tutors .BannerTutors {
+    margin-top: 10%;
+  }
+  .Tutors .BannerTutors .Row1, .Tutors .BannerTutors .Row2 {
+    width: 95%;
+    height: 40%;
+  }
+  .Tutors .BannerTutors .Row1 .Entry img, .Tutors .BannerTutors .Row2 .Entry img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #1e4190;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .Tutors .BannerTutors .Row1 .Entry .textHolder, .Tutors .BannerTutors .Row2 .Entry .textHolder {
+    width: 125px;
+  }
+  .Tutors .BannerTutors .Row1 .Entry .textHolder h4, .Tutors .BannerTutors .Row2 .Entry .textHolder h4 {
+    margin-top: 2%;
+    margin-left: 7%;
+    font-size: 16px;
+  }
+  .Tutors .BannerTutors .Row1 .Entry .textHolder p, .Tutors .BannerTutors .Row2 .Entry .textHolder p {
+    margin-left: 7%;
+    font-size: 12px;
+  }
+  .Students h1 {
+    margin-top: -10%;
+  }
+  .Students .BannerStudents {
+    margin-top: 10%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Students .BannerStudents .Entry {
+    margin-top: 0%;
+    width: 250px;
+    height: 250px;
+  }
+  .Students .BannerStudents .Entry img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #1e4190;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .Students .BannerStudents .Entry .textHolder {
+    width: 125px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Students .BannerStudents .Entry .textHolder h4 {
+    font-size: 16px;
+  }
+  .Students .BannerStudents .Entry .textHolder p {
+    font-size: 12px;
+  }
+  .Students .Slider {
+    position: absolute;
+    margin-top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .Page h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  header nav .Logo {
+    width: 150px;
+  }
+  header nav .Menu {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    cursor: pointer;
+  }
+  header nav .Links {
+    display: none;
+  }
+  .Landing .Perks .Perk {
+    text-align: center;
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Landing .Perks .Perk .ImageHolder {
+    width: 85px;
+    height: 85px;
+  }
+  .Landing .Perks .Perk .ImageHolder img {
+    width: 85px;
+    height: 85px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .Landing .Perks .Perk h2 {
+    width: 85px;
+    font-size: 12px;
+    padding-top: 0;
+    padding-left: 0;
+    height: 150px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .Landing .Perks .Perk h2 span {
+    font-size: 14px;
+  }
+  .Landing .BannerLanding {
+    width: 100%;
+    height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10%;
+  }
+  .Landing .BannerLanding .Intro {
+    padding-top: 10%;
+    padding-left: 5%;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Doubts .BannerDoubts {
+    width: 100%;
+    height: 50%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Doubts .BannerDoubts .Illustro {
+    position: absolute;
+    z-index: -1;
+  }
+  .Doubts .BannerDoubts .Details {
+    width: 100%;
+    height: 90%;
+  }
+  .Doubts .BannerDoubts .Details .Content .text h2 {
+    font-size: 18px;
+  }
+  .Doubts .BannerDoubts .Details .Content .text p {
+    font-size: 16px;
+  }
+  .Doubts .BannerDoubts .Details .Content .text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -5vh;
+    background: url(../media/illustrations/student-hearing-tutor-through-the-computer-vector.jpg);
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  .Doubts .WorkFlow {
+    z-index: 1;
+  }
+  .Doubts .WorkFlow .Circles .Circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: none;
+  }
+  .Live .BannerLive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60%;
+  }
+  .Live .BannerLive .Details {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Live .BannerLive .Details .Detail h3 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 18px;
+  }
+  .Live .BannerLive .Details .Detail p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 16px;
+  }
+  .Jee .BannerJee, .Jee .BannerNeet, .Neet .BannerJee, .Neet .BannerNeet {
+    margin-top: 5%;
+    width: 100%;
+    height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Jee .BannerJee .Details, .Jee .BannerNeet .Details, .Neet .BannerJee .Details, .Neet .BannerNeet .Details {
+    width: 100%;
+  }
+  .Jee .BannerJee .Details p, .Jee .BannerNeet .Details p, .Neet .BannerJee .Details p, .Neet .BannerNeet .Details p {
+    width: 100%;
+  }
+  .Books h1, .Boards h1 {
+    margin-top: -10%;
+  }
+  .Books .BannerBooks .Row1, .Books .BannerBooks .Row2, .Books .BannerBoards .Row1, .Books .BannerBoards .Row2, .Boards .BannerBooks .Row1, .Boards .BannerBooks .Row2, .Boards .BannerBoards .Row1, .Boards .BannerBoards .Row2 {
+    height: 40%;
+  }
+  .Books .BannerBooks .Row1 .ImageHolder, .Books .BannerBooks .Row2 .ImageHolder, .Books .BannerBoards .Row1 .ImageHolder, .Books .BannerBoards .Row2 .ImageHolder, .Boards .BannerBooks .Row1 .ImageHolder, .Boards .BannerBooks .Row2 .ImageHolder, .Boards .BannerBoards .Row1 .ImageHolder, .Boards .BannerBoards .Row2 .ImageHolder {
+    width: 15%;
+    height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Books .BannerBooks .Row1 .ImageHolder h4, .Books .BannerBooks .Row2 .ImageHolder h4, .Books .BannerBoards .Row1 .ImageHolder h4, .Books .BannerBoards .Row2 .ImageHolder h4, .Boards .BannerBooks .Row1 .ImageHolder h4, .Boards .BannerBooks .Row2 .ImageHolder h4, .Boards .BannerBoards .Row1 .ImageHolder h4, .Boards .BannerBoards .Row2 .ImageHolder h4 {
+    text-align: center;
+    font-size: 11px;
+    font-weight: lighter;
+  }
+  .Books .BannerBooks .Row1 .ImageHolder img, .Books .BannerBooks .Row2 .ImageHolder img, .Books .BannerBoards .Row1 .ImageHolder img, .Books .BannerBoards .Row2 .ImageHolder img, .Boards .BannerBooks .Row1 .ImageHolder img, .Boards .BannerBooks .Row2 .ImageHolder img, .Boards .BannerBoards .Row1 .ImageHolder img, .Boards .BannerBoards .Row2 .ImageHolder img {
+    padding-top: 5%;
+    width: 70%;
+    height: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .Subjects h1 {
+    margin-top: 0%;
+  }
+  .Subjects .BannerSubjects .ImageHolder {
+    width: 150px;
+    height: 150px;
+  }
+  .Subjects .BannerSubjects .ImageHolder img {
+    width: 100px;
+    height: 100px;
+  }
+  .Subjects .BannerSubjects .ImageHolder h4 {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .Tutors h1 {
+    margin-top: -5%;
+  }
+  .Tutors .BannerTutors {
+    margin-top: 10%;
+    width: 100%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Tutors .BannerTutors .Row1, .Tutors .BannerTutors .Row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .Tutors .BannerTutors .Row1 .Entry, .Tutors .BannerTutors .Row2 .Entry {
+    width: 50%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Students .BannerStudents {
+    width: 100%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Students .Slider {
+    position: absolute;
+    margin-top: 80vh;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Students button {
+    margin-top: 8%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

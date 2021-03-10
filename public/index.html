@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body onresize="Responsive()">
+    <div class="Coursify">
+        <header>
+            <nav
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-delay="400"
+            id="Navbar"
+            >
+                <img class="Logo" src="../media/logo.png">
+                <section class="Links Dropdown">
+                <a class="Link" href="#">Live Classes</a>
+                <a class="Link" href="#">Video Library</a>
+                <a class="Link" href="#">Course</a>
+                <a class="Link" href="#">Book</a>
+                <a class="Link" href="#">Board</a>
+                <a class="Link" href="#">Exam</a>
+                </section>
+                <img class="Menu" src="../media/illustrations/menu.png">
+            </nav>
+        </header>
+
+
+        <div class="Page Landing">
+          <div class="BannerLanding"> 
+                <div
+                data-aos="fade-right"
+                data-aos-duration="800"
+                class="Intro"> 
+                <h1 
+                 class="Title">Clarify your <span>doubts</span><br> in your language.</h1>
+                <button>Ask your doubt now</button>    
+                </div>
+                <div 
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                class="VideoHolder">
+                    <video src="../media/videos/Video.m4v" autoplay type="m4v" loop 
+                    onclick="this.paused ? this.play() : this.pause();"
+                    controls
+                    ></video>
+                </div>
+          </div>
+          <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="400"
+          class="Perks">
+              <div class="Perk">
+                  <div class="ImageHolder">
+                      <img src="../media/illustrations/doubts.jpg">
+                  </div>
+                  <h2><span>40,000+</span><br>Doubts cleared</h2>
+              </div>
+              <div class="Perk">
+                    <div class="ImageHolder">
+                        <img src="../media/illustrations/board.jpg">
+                    </div>
+                    <h2><span>20+</span><br>State Boards</h2>
+              </div>
+              <div class="Perk">
+                    <div class="ImageHolder">
+                        <img src="../media/illustrations/online class.jpg">
+                    </div>
+                    <h2><span>1,000,000+</span><br>Video Lectures</h2>
+              </div>
+              <div class="Perk">
+                    <div class="ImageHolder">
+                        <img src="../media/illustrations/books.jpg">
+                    </div>
+                    <h2><span>5000+</span><br>Books Covered</h2>
+             </div>   
+          </div> 
+        </div>
+
+
+
+
+
+        <div class="Page Doubts">
+          <div class="BannerDoubts">  
+            <div 
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            class="Details">
+                <h1>Solve your doubts <span>faster</span></h1>
+                <div class="Content">
+                    <img src="../media/illustrations/global.jpg">
+                    <div class="text">
+                    <h2>
+                        Accessible everywhere
+                    </h2>
+                    <p>
+                        Access to quality education anytime, anywhere
+                    </p>
+                    </div>
+                    
+                </div>    
+                
+                <div class="Content">
+                    <img src="../media/illustrations/videos.png">
+                    <div class="text">
+                        <h2>
+                            1 million+ videos
+                        </h2>
+                        <p>
+                            Unlimited access to video solutions
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div 
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                class="Illustro">
+                    <img src="../media/illustrations/student-hearing-tutor-through-the-computer-vector.jpg">
+                </div>
+           </div>
+            <div class="WorkFlow">
+                <h3>How it works?</h3>
+                <div class="Circles">
+                    <div class="Circle">
+                        <img src="../media/illustrations/thinking.png">
+                        <h4>Have a doubt?</h4>
+                    </div>
+                    <img src="../media/illustrations/arrow.png">
+                    <div class="Circle">
+                        <img src="../media/illustrations/typing.png">
+                        <h4>Type your question
+                            <br><span>or</span>
+                            <br>Upload an image
+                        </h4>
+                    </div>
+                    <img src="../media/illustrations/arrow.png">
+                    <div class="Circle">
+                        <img src="../media/illustrations/solution.jpg">
+                        <h4>Get your solution!</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <button>Clarify your doubts now!</button>
+        </div>
+
+
+
+        <div class="Page Live">
+            <h1><span>LIVE</span> classes</h1>
+            <div class="BannerLive">
+                <div 
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                class="VideoHolder">
+                    <video src="../media/videos/students.m4v" muted type="m4v" loop
+                    onclick="this.paused ? this.play() : this.pause();"
+                    controls
+                    ></video>
+                </div>
+                <div 
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                class="Details">
+                <div class="Detail">
+                    <img src="../media/illustrations/global.jpg">
+                    <div>
+                        <h3>
+                            Accessible everywhere
+                        </h3>
+                        <p>
+                            Access to quality education anytime, anywhere
+                        </p>
+                    </div>
+                </div>
+                <div class="Detail">
+                    <img src="../media/illustrations/teacher.jpg">
+                    <div>
+                        <h3>
+                            Expert Teachers
+                        </h3>
+                        <p>
+                            Unlimited access to video solutions
+                        </p>
+                    </div>
+                </div>
+                <div class="Detail">
+                    <img src="../media/illustrations/message.png">
+                    <div>
+                        <h3>
+                            Interactive Sessions
+                        </h3>
+                        <p>
+                            Small groups of maximum student-teacher interaction
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h2> First class free</h2>
+            <button>Book a class now</button>
+        </div>
+
+
+
+
+        <div class="Page Jee">
+            <h1><span>JEE</span> Mains & Advanced preparation</h1>
+            <div class="BannerJee">
+                <div 
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                class="VideoHolder">
+                    <video src="../media/videos/students.m4v" muted type="m4v" loop
+                    onclick="this.paused ? this.play() : this.pause();"
+                    controls
+                    ></video>
+                </div>
+                <div 
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                class="Details">
+                    <h2>Micro concept videos</h2>
+                    <p>Find multilingual video explanations important and 
+                       frequently confused concepts from every subject.</p>
+                </div>
+                
+                
+            </div>
+            <div class="Slider">
+                <svg class="Slide-active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#1e4190"/>
+                </svg>
+                <svg class="Slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#c4c4c4"/>
+                </svg>
+                <svg class="Slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#c4c4c4"/>
+                </svg>     
+            </div>
+            <button>Prepare for JEE now</button>
+            
+
+        </div>
+
+
+
+
+        <div class="Page Neet">
+            <h1>NEET preparation</h1>
+            <div class="BannerNeet">
+                <div 
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                class="VideoHolder">
+                    <video src="../media/videos/students.m4v" muted type="m4v" loop
+                    onclick="this.paused ? this.play() : this.pause();"
+                    controls
+                    ></video>
+                </div>
+                <div 
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                class="Details">
+                    <h2>Micro concept videos</h2>
+                    <p>Find multilingual video explanations important and 
+                       frequently confused concepts from every subject.</p>
+                </div>
+                
+            </div>
+            <div class="Slider">
+                <svg class="Slide-active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#1e4190"/>
+                </svg>
+                <svg class="Slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#c4c4c4"/>
+                </svg>
+                <svg class="Slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#c4c4c4"/>
+                </svg>     
+            </div>
+            
+            <button>Prepare for NEET now</button>
+
+        </div>
+
+
+
+
+        <div class="Page Subjects">
+            <h1>Explore the subjects<br><span>with us!</span></h1>
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+            class="BannerSubjects">
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/abacus.jpg">
+                    <h4>Maths</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/atom2.jpg">
+                    <h4>Physics</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/chemistry.jpg">
+                    <h4>Chemistry</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/DNA.png">
+                    <h4>Biology</h4>
+                </div>
+            </div>
+            <a href="#">View all ></a>
+        
+        </div>
+
+
+
+
+        <div class="Page Books">
+            <h1><span>Free access</span> to 5000+ books</h1>
+            <p>Get the access to virtual library of
+                5000+ text books and reference books<br> of various 
+                stateboards and competetive exams.
+            </p>
+            <div class="BannerBooks">
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+            class="Row1">    
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book1.jpg">
+                    <h4>HC Verma</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book2.jpg">
+                    <h4>NCERT</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book3.jpg">
+                    <h4>KC Sinha</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book4.jpg">
+                    <h4>Errorless</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book5.jpg">
+                    <h4>Tata McGraw Hill</h4>
+                </div>
+            </div>
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="400"
+            class="Row2">    
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book4.jpg">
+                    <h4>RD Sharma</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book7.jpg">
+                    <h4>Pradeep's</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book8.jpg">
+                    <h4>SL Arora</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book9.jpg">
+                    <h4>Maths</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/books/book10.jpg">
+                    <h4>Britanicca</h4>
+                </div>
+            </div>    
+            </div>
+            <a href="#">View all ></a>
+        
+        </div>
+
+
+
+
+        <div class="Page Boards">
+            <h1>State Boards</h1>
+            <p>Learn your board syllabus from the best teachers with us.
+            </p>
+            <div class="BannerBoards">
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+            class="Row1">    
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/maharashtra.png">
+                    <h4>Maharastra</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/Punjab.jpg">
+                    <h4>Punjab</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/AP.jpg">
+                    <h4>Andra Pradesh</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/WB.png">
+                    <h4>West Bengal</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/UP.jpg">
+                    <h4>Uttar Pradesh</h4>
+                </div>
+            </div>
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="400"
+            class="Row2">    
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/kl.png">
+                    <h4>Kerala</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/Rajasthan.jpg">
+                    <h4>Rajasthan</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/gujarat.png">
+                    <h4>Gujarat</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/tn.png">
+                    <h4>Tamil Nadu</h4>
+                </div>
+                <div class="ImageHolder">
+                    <img src="../media/illustrations/boards/mp.jpg">
+                    <h4>Madhya Pradesh</h4>
+                </div>
+            </div>    
+            </div>
+            <a href="#">View all ></a>
+        
+        </div>
+
+
+
+        <div class="Page Tutors">
+            <h1>Meet our <span>expert tutors</span></h1>
+            <div class="BannerTutors">
+                <div 
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                class="Row1">
+                   <div class="Entry">
+                        <img src="../media/illustrations/model1.jpeg">
+                        <div class="textHolder">
+                            <h4>Shivani Arora</h4>
+                            <p>
+                                Lorem Ipsum ahds
+                                <br>shivaniarora@gmail.com
+                                <br>linkedIn/Shivaninaroroa
+                            </p>
+                        </div>
+                   </div>
+                   <div class="Entry">
+                        <img src="../media/illustrations/model1.jpeg">
+                        <div class="textHolder">
+                            <h4>Shivani Arora</h4>
+                            <p>
+                                Lorem Ipsum ahds
+                                <br>shivaniarora@gmail.com
+                                <br>linkedIn/Shivaninaroroa
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="Entry">
+                        <img src="../media/illustrations/model1.jpeg">
+                        <div class="textHolder">
+                            <h4>Shivani Arora</h4>
+                            <p>
+                                Lorem Ipsum ahds
+                                <br>shivaniarora@gmail.com
+                                <br>linkedIn/Shivaninaroroa
+                            </p>
+                        </div>
+                    </div>  
+                    
+                    
+                </div>
+                <div 
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                class="Row2">
+                    <div class="Entry">
+                         <img src="../media/illustrations/model1.jpeg">
+                         <div class="textHolder">
+                             <h4>Shivani Arora</h4>
+                             <p>
+                                 Lorem Ipsum ahds
+                                <br>shivaniarora@gmail.com
+                                <br>linkedIn/Shivaninaroroa
+                             </p>
+                         </div>
+                    </div>
+                    <div class="Entry">
+                         <img src="../media/illustrations/model1.jpeg">
+                         <div class="textHolder">
+                             <h4>Shivani Arora</h4>
+                             <p>
+                                 Lorem Ipsum ahds
+                                 <br>shivaniarora@gmail.com
+                                 <br>linkedIn/Shivaninaroroa
+                             </p>
+                         </div>
+                     </div> 
+                     <div class="Entry">
+                         <img src="../media/illustrations/model1.jpeg">
+                         <div class="textHolder">
+                             <h4>Shivani Arora</h4>
+                             <p>
+                                 Lorem Ipsum ahds
+                                 <br>shivaniarora@gmail.com
+                                 <br>linkedIn/Shivaninaroroa
+                             </p>
+                         </div>
+                     </div>  
+                     
+                     
+                 </div>
+            </div>
+        </div>
+
+
+
+        <div class="Page Students">
+            <h1>See what <span>our students</span> have to say</h1>
+            <div class="BannerStudents">
+                <div 
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                class="VideoHolder">
+                    <video src="../media/videos/talking.m4v" muted type="m4v" loop
+                    onclick="this.paused ? this.play() : this.pause();"
+                    controls
+                    ></video>
+                </div>
+                <div 
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                class="Entry">
+                    <img src="../media/illustrations/model3.jpeg">
+                    <div class="textHolder">
+                        <h4>Ashifa Begam</h4>
+                        <p>
+                            Btech CSE at IIT
+                            <br>ashifabegam@gmail.com
+                            <br>linkedIn/asgifabegam
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="Slider">
+                <svg class="Slide-active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#1e4190"/>
+                </svg>
+                <svg class="Slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#c4c4c4"/>
+                </svg>
+                <svg class="Slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#c4c4c4"/>
+                </svg>     
+            </div>
+            
+            <button>Download the app for free</button>       
+        </div>
+
+    </div>
+    <footer>
+        <section class="Copyright">© coursify <span>2019</span></section>
+    </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

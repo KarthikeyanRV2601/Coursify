@@ -1,0 +1,131 @@
+$font-color:#474747;
+$logo-blue:#1e4190;
+$logo-red:#d60b3c;
+
+
+
+@mixin  RowBanners {
+    
+        width: 100%;
+        height: 60%;
+        margin-top: 1%;
+        .Row1{
+            margin-top: 2%;
+            width:100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .ImageHolder{
+                width:200px;
+                height: 200px;
+                // background: coral;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: -2px 5px 6px rgba(0,0,0,0.1),
+                             2px -3px 5px rgba(0,0,0,0.1);
+                img{
+                    width:130px;
+                    height:130px;
+                    object-fit: cover;
+                }
+                h4{
+                    // padding-top: 20px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+        .Row2{
+            width:100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .ImageHolder{
+                width:200px;
+                height: 200px;
+                // background: coral;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: -2px 5px 6px rgba(0,0,0,0.1),
+                             2px -3px 5px rgba(0,0,0,0.1);
+                img{
+                    width:130px;
+                    height:130px;
+                    object-fit: cover;
+                }
+                h4{
+                    // padding-top: 20px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    
+    
+}
+
+
+
+@mixin RowTutors {
+    
+        margin-left: 4%;
+        width:100%;
+        height: 50%;
+        display: flex;
+
+
+    
+    .Entry{
+        width:600px;
+        height:150px;
+        display: flex;
+        img{
+            width:120px;
+            height: 120px;
+            border-radius: 50%;
+            background: $logo-blue;
+            object-fit: cover;
+        }
+        .textHolder{
+            width:400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            h4{
+                margin-top: 2%;
+                margin-left: 10%;
+            }
+            p{
+
+                margin-left: 10%;
+            }
+        }
+
+    }
+
+    
+}
+
+@mixin  HoverButton{
+    animation:animate 0.8s linear infinite alternate;
+
+    @keyframes animate{
+        0%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+}
